@@ -17,6 +17,7 @@ public class PosterTest {
         String[] actual = manager.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
 
     public void addOverLimitTest() {
@@ -31,6 +32,7 @@ public class PosterTest {
         String[] actual = manager.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
 
     public void addNoneTest() {
@@ -51,6 +53,7 @@ public class PosterTest {
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLast2Test() {
         MoviesManager manager = new MoviesManager(2);
@@ -62,6 +65,7 @@ public class PosterTest {
         String[] actual = manager.findLast();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void findLast10LimitTest() {
         MoviesManager manager = new MoviesManager();
