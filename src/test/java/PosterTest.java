@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 public class PosterTest {
 
     @Test
-
     public void addTest() {
         MoviesManager manager = new MoviesManager(7);
         manager.add("Film 1");
@@ -19,7 +18,6 @@ public class PosterTest {
     }
 
     @Test
-
     public void addOverLimitTest() {
         MoviesManager manager = new MoviesManager(5);
         manager.add("Film 1");
@@ -34,7 +32,6 @@ public class PosterTest {
     }
 
     @Test
-
     public void addNoneTest() {
         MoviesManager manager = new MoviesManager(7);
         String[] expected = {};
